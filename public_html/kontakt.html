@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+    <head>
+        <title>Grube Ryby</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="newcss.css" media="screen">
+        <link href="newcss.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+       <header id="baner"> 
+           <a href="index.html"><img src="NIproj/baner.png" alt="Baner z grubymi rybami" id="banerek"> </a>
+        </header>
+           <nav>
+            <a href="index.html" class="napisy">Artykuły</a>
+            <a href="kącik.html" class="napisy">Kącik Szkalowania Rekinów</a>
+            <a href="sklep.html" class="napisy">Gruby Sklep</a>
+            <a href="kontakt.html" class="napisy">Kontakt</a>
+        </nav>
+        <div id="kontener2">
+            <section id="wiadomosc">
+                 <h2>Skontaktuj się z nami poprzez formularz:</h2>
+            <form  action="mailto:magicznyjasio@gmail.com">
+                 <br/>
+                Ades e-mail: <br/>
+                      <input class="mail" type="email" size="20">
+                      <br/><br/>
+                Numer użytkownika: <br/>
+                      <input class="mail" type="email" size="20" pattern=[0-9]{4} >
+                      <br/><br/>
+                Wiek: <br/>
+                    
+                        <label>
+                          <input type="radio" name="wiek"> 1-18
+                        </label>
+
+                       <label>
+                          <input type="radio" name="wiek"> 19-64
+                        </label>
+
+                        <label>
+                          <input type="radio" name="wiek"> 64+
+                        </label>
+
+                
+                 <br/> <br/>
+                 W jakiej sprawie piszesz (możesz zaznaczyć więcej możliwości)?<br/>
+                     <input type="checkbox"  value="W prywatnej">W prywatnej<br>
+                     <input type="checkbox"  value="Problem z logowaniem">Problem z logowaniem<br>
+                     <input type="checkbox"  value="Błąd na stronie">Błąd na stronie<br>
+                     <input type="checkbox"  value="Chcę pochwalić administratora">Chcę pochwalić administratora<br>
+                     <input type="checkbox"  value="Inna">Inna
+
+                     <br/> <br/>
+
+                Z jakiej przegladarki korzystasz? <br/>
+                    <select name="System operacyjny" multiple size="3">
+                    <option selected>Google Chrome</option>
+                    <option>Mozilla Firefox</option>
+                    <option>Microsoft Edge</option>
+                    <option>Opera</option>
+                    <option>Safari</option>
+                    <option>Inna</option>
+                    </select>
+                <br/><br/>
+                
+                Numer karty:<input type="text" id="numerkarty" name="numerkarty" placeholder="16 cyfr" pattern="[1-9]{16}" required /> <br/><br/>
+        Data ważności karty: <input type="text" id="miesiac" name="miesiac" placeholder="MM" maxlength="2" size="2" pattern="(0[1-9])|(1[0-2])" required /><input type="text" name="rok" id="rok" placeholder="YY" maxlength="2" size="2" pattern="^2[1-9]" required /><br/><br/>
+         Kod CVV*:<input type="text" id="kodcvv" placeholder="3 cyfry" pattern="[0-9]{3}" required /> <br/><br/>
+                
+                
+                Treść wiadomości:
+                <br/>
+                <textarea id="textarea" rows="10" cols="50" > </textarea>
+                    <br/><input type="submit" value="Wyślij"><br/>
+                
+                 
+            </form>
+            </section>
+        
+  
+        </div>
+        
+
+        <footer> Gruba Ryba sp. z o.o. <br/>
+       &copy;Wszelkie prawa zastrzeżone 
+        </footer>
+    
+    </body>
+    
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+    <head>
+        <title>Grube Ryby</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="newcss.css" media="screen">
+        <link rel="stylesheet" href="sklep.css" media="screen">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="koszyk.js"> </script>
+    </head>
+    <body onload="pokazKoszyk()">
+       <header id="baner"> 
+           <a href="index.html"><img src="NIproj/baner.png" alt="Baner z grubymi rybami" id="banerek"> </a>
+        </header>
+           <nav>
+            <a href="index.html" class="napisy">Artykuły</a>
+            <a href="kącik.html" class="napisy">Kącik Szkalowania Rekinów</a>
+            <a href="sklep.html" class="napisy">Gruby Sklep</a>
+            <a href="kontakt.html" class="napisy">Kontakt</a>
+        </nav>
+        <div id="kontener">
+       
+            
+            
+            <div class="wiersz">
+                <div class="przedmiot">
+                    <img src="NIproj/rekinZabawka.jpg" alt='' class="obraz"> 
+                    <p class="naglowek">Zabawka rekin</p> 
+                    <p class="cena">Cena: 149.98zł </p>
+                    <form class="formularz">  
+                        <p>Kolor:
+                        <select class="kolor">
+                            <option selected class="czerwony">czerwony   </option>
+                            <option class="zielony">zielony    </option>
+                            <option class="niebieski">niebieski   </option>
+                            <option class="biały">biały  </option>
+                        </select>
+                        <p>Ilosc sztuk: <input class="liczba" type="number"></p>
+                    </form>
+                    <button onclick='dodajProdukt(149.98,"Zabawka rekin",0)'> Dodaj do koszyka </button>
+                </div>
+                <div class="przedmiot">
+                    <img src="NIproj/olejRekin.jpg" alt='' class="obraz">
+                    <p class="naglowek">Olej z rekina</p> 
+                    <p class="cena">Cena: 349.99zł </p>
+                    <form class="formularz"> 
+                          <select class="kolor">
+                        <option selected class="czerwony">czerwony   </option>
+                            <option class="zielony">zielony    </option>
+                            <option class="niebieski">niebieski   </option>
+                            <option class="biały">biały  </option>
+                        </select>
+                        <p>Ilosc sztuk: <input class="liczba" type="number"></p>
+                       
+                    </form>
+                        <button onclick="dodajProdukt(349.99,'Olej z rekina',1)"> Dodaj do koszyka </button>
+                </div>
+                <div class="przedmiot">  
+                    <img src="NIproj/rekinChrzastka.jpg" alt='' class="obraz">
+                    <p class="naglowek">Chrząstka z rekina</p> 
+                    <p class="cena">Cena: 3050.00zł </p>
+                    <form class="formularz"> 
+                          <select class="kolor">
+                        <option selected class="czerwony">czerwony   </option>
+                            <option class="zielony">zielony    </option>
+                            <option class="niebieski">niebieski   </option>
+                            <option class="biały">biały  </option>
+                        </select>
+                        <p>Ilosc sztuk: <input class="liczba" type="number"></p>
+                        
+                        </form>
+                    <button onclick='dodajProdukt(3050.00,"Chrząstka z rekina",2)'> Dodaj do koszyka </button>
+                </div>
+                 
+            </div>
+            <div class="wiersz">
+                <div class="przedmiot">
+                    <img src="NIproj/rekinOdstraszacz.jpg" alt='' class="obraz">
+                    <p class="naglowek">Odstraszacz rekinów</p> 
+                    <p class="cena">Cena: 199.99zł </p>
+                    <form class="formularz"> 
+                          <select class="kolor">
+                        <option selected class="czerwony">czerwony   </option>
+                            <option class="zielony">zielony    </option>
+                            <option class="niebieski">niebieski   </option>
+                            <option class="biały">biały  </option>
+                        </select>
+                        <p>Ilosc sztuk: <input class="liczba" type="number"></p>
+                        
+                         </form>
+                    <button onclick='dodajProdukt(199.99,"Odstraszacz rekinów",3)'> Dodaj do koszyka </button>
+                </div>
+                <div class="przedmiot">
+                    <img src="NIproj/kukurydza.jpg" alt='' class="obraz">
+                    <p class="naglowek">Puszka kukurydzy</p> 
+                    <p class="cena">Cena: 5.00zł </p>
+                    <form class="formularz">  
+                          <select class="kolor">
+                        <option selected class="czerwony">czerwony   </option>
+                            <option class="zielony">zielony    </option>
+                            <option class="niebieski">niebieski   </option>
+                            <option class="biały">biały  </option>
+                        </select>
+                        <p>Ilosc sztuk: <input class="liczba" type="number"></p>
+                        
+                       </form>
+                    <button onclick='dodajProdukt(5.00,"Puszka kukurydzy",4)'> Dodaj do koszyka </button>
+                </div>
+                <div class="przedmiot">
+                    <img src="NIproj/plankton.jpg" alt='' class="obraz">
+                    <p class="naglowek">Plankton</p> 
+                    <p class="cena">Cena: 100.00zł/kg </p>
+                    <form class="formularz">  
+                          <select class="kolor">
+                        <option selected class="czerwony">czerwony   </option>
+                            <option class="zielony">zielony    </option>
+                            <option class="niebieski">niebieski   </option>
+                            <option class="biały">biały  </option>
+                        </select>
+                        <p>Ilosc sztuk: <input class="liczba" type="number"></p>
+                             
+                    </form>
+                    <button onclick='dodajProdukt(100.00,"Plankton",5)'> Dodaj do koszyka </button>
+                </div>
+            </div>
+            <div class="wiersz">
+                <div class="przedmiot"> 
+                    <img src="NIproj/plankton2.jpg" alt='' class="obraz">
+                    <p class="naglowek">Plankton ze Spongeboba</p> 
+                    <p class="cena">Cena: 999.99zl </p>
+                    <form class="formularz"> 
+                          <select class="kolor">
+                        <option selected class="czerwony">czerwony   </option>
+                            <option class="zielony">zielony    </option>
+                            <option class="niebieski">niebieski   </option>
+                            <option class="biały">biały  </option>
+                        </select>
+                        <p>Ilosc sztuk: <input class="liczba" type="number">     
+                        
+                    </form>
+                    <button onclick='dodajProdukt(999.99,"Plankton ze Spongeboba",6)'> Dodaj do koszyka </button>
+                </div>
+                <div class="przedmiot"> 
+                    <img src="NIproj/rekinPrzyprawa.jpg" alt='' class="obraz">
+                    <p class="naglowek">Przyprawa do rekina</p> 
+                    <p class="cena">Cena: 339.00zł </p>
+                    <form class="formularz">  
+                          <select class="kolor">
+                        <option selected class="czerwony">czerwony   </option>
+                            <option class="zielony">zielony    </option>
+                            <option class="niebieski">niebieski   </option>
+                            <option class="biały">biały  </option>
+                        </select>
+                        <p>Ilosc sztuk: <input class="liczba" type="number"></p>                        
+                        
+                    </form>
+                    <button onclick='dodajProdukt(339.00,"Przyprawa do rekina",7)'> Dodaj do koszyka </button>
+                </div>
+                <div class="przedmiot">
+                    <img src="NIproj/rekinSushi.jpg" alt='' class="obraz">
+                    <p class="naglowek">Talerz "Rekin Sushi"</p> 
+                    <p class="cena">Cena: 99.00zł </p>
+                    <form class="formularz">   
+                          <select class="kolor">
+                        <option selected class="czerwony">czerwony   </option>
+                            <option class="zielony">zielony    </option>
+                            <option class="niebieski">niebieski   </option>
+                            <option class="biały">biały  </option>
+                        </select>
+                        <p>Ilosc sztuk: <input class="liczba" type="number"></p>                        
+                        
+                    </form>
+                    <button onclick='dodajProdukt(99.00,"Talerz Rekin Sushi",8)'> Dodaj do koszyka </button>
+                </div>
+            </div>
+  
+             <aside  id="koszyk"> 
+                 <p class="naglowek">Koszyk<p>
+                 <div id="tabelka" >
+                     
+                    
+                 </div>
+                 
+               </aside> 
+            
+        </div>
+        
+
+        <footer> Gruba Ryba sp. z o.o. <br/>
+       &copy;Wszelkie prawa zastrzeżone 
+        </footer>
+    
+    </body>
+    
+</html>

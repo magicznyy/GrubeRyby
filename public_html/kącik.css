@@ -1,0 +1,47 @@
+body{
+    margin:0;
+    padding:0;
+    
+}
+
+.container{
+    width:80%;
+   margin-left:7%;
+   margin-top:3%;
+   justify-content: center;
+    background: rgba(10,10,10,0.8);
+    padding:3%;
+}
+
+.box img{
+    width:80%;
+    height:auto;
+    display: block;
+    padding:3%;
+    background-image: url("NIproj/tło.png");
+    
+}
+
+.box img:hover{
+    
+    background: #999999;
+    transition:0.5s;
+     transform: scale(1.03);
+}
+
+#nag{
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    font-weight: bold; 
+}
+.macy{
+    margin-left:3%;
+}
+
+@media only screen and (max-width: 820px){
+   
+    #nag{
+        font-size:50px;
+    }
+}

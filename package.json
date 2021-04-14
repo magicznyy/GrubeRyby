@@ -1,0 +1,8 @@
+{
+    "name": "GrubeRyby",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "HardPc",
+    "contributors": [],
+    "dependencies": {}
+}
